@@ -27,7 +27,7 @@ jobs:
       # 安装依赖包
       - name: Install dependencies
         run: |
-          python setup.py install
+          pip install -e '.[dev]'
           pip install sphinxcontrib-httpdomain sphinx-intl
           conda install ipykernel
           python -m ipykernel install --user --name ai --display-name "ai"
