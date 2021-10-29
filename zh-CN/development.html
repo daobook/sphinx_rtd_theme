@@ -67,14 +67,14 @@
 <p class="caption" role="heading"><span class="caption-text">演示文档</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="demo/structure.html">1. 结构性元素</a></li>
-<li class="toctree-l1"><a class="reference internal" href="demo/structure.html#structural-elements-2">2. Structural Elements 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/structure.html#structural-elements-2">2. 结构性元素 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="demo/demo.html">3. Paragraph Level Markup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="demo/lists_tables.html">4. 列表和表格</a></li>
 <li class="toctree-l1"><a class="reference internal" href="demo/api.html">5. API文档和生成的内容</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">这是一个长菜单的难以置信的长标题</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="demo/long.html">1. 长条状导航</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/long.html">1. 长贴式导航</a></li>
 </ul>
 
         </div>
@@ -193,7 +193,7 @@
 <section id="roadmap">
 <h2>路线图<a class="headerlink" href="#roadmap" title="永久链接至标题"></a></h2>
 <p>我们目前在发展路线图上有几个版本的计划。每一个版本都注明了向后不兼容的变化、弃用和主要功能。</p>
-<p>版本遵循 <a class="reference external" href="http://semver.org/">semantic versioning</a>，因此一般建议作者将对 <code class="docutils literal notranslate"><span class="pre">sphinx_rtd_theme</span></code> 的依赖性固定在低于下一个主版本的版本：</p>
+<p>版本遵循 <a class="reference external" href="http://semver.org/">语义化版本</a>，因此一般建议作者将对 <code class="docutils literal notranslate"><span class="pre">sphinx_rtd_theme</span></code> 的依赖性固定在低于下一个主版本的版本：</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install <span class="s2">&quot;sphinx_rtd_theme&lt;=2.0.0&quot;</span>
 </pre></div>
 </div>
@@ -238,7 +238,7 @@
 <dt>Sphinx 1.x, Sphinx 2.x, 和 Docutils 0.16 将不被测试。</dt><dd><p>官方将放弃对这些版本的支持，尽管它们可能仍在继续工作。主题开发者将不再测试这些版本。</p>
 </dd>
 <dt>将取消对 HTML4 的支持</dt><dd><p>从这个版本开始，我们将只支持 HTML5 写入器的输出，试图使用 HTML4 写入器的构建将失败。如果你还在使用 HTML4 编写器，或者在你的 Sphinx 配置文件中有 <code class="docutils literal notranslate"><span class="pre">html4_writer</span> <span class="pre">=</span> <span class="pre">True</span></code> 选项，你需要删除这个选项，或者将你的依赖关系固定在 <code class="docutils literal notranslate"><span class="pre">sphinx_rtd_theme&lt;=2.0.0</span></code>，直到你可以为止。</p>
-<p>这个选项在过去被建议用来解决 HTML5 支持的问题，不应该再要求使用这个主题和斯芬克斯的现代组合。</p>
+<p>这个选项在过去被建议用来解决 HTML5 支持的问题，不应该再这个主题和 Sphinx 的现代组合所需要。</p>
 </dd>
 </dl>
 </section>
