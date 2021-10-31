@@ -36,13 +36,13 @@ jobs:
       - name: Build the book
         run: |
           git clone https://github.com/daobook/sphinx_rtd_theme-locale.git
-          cp sphinx_rtd_theme-locale/locales -rf docs/locale/
+          cp  -rf sphinx_rtd_theme-locale/locales docs/locale/
+          rm -rf sphinx_rtd_theme-locale/
           cd docs
           make gettext
           sphinx-intl update -p build/gettext -l zh_CN
           make html
           sphinx-build -D language=zh_CN -b html ./ build/html/zh-CN
-          rm -rf sphinx_rtd_theme-locale/
 
       # 部署 HTML 到 gh-pages 分支
       - name: GitHub Pages action
