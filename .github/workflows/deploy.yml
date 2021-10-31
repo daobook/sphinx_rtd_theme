@@ -36,7 +36,7 @@ jobs:
       - name: Build the book
         run: |
           git clone https://github.com/daobook/sphinx_rtd_theme-locale.git
-          cp  -rf sphinx_rtd_theme-locale/locales docs/locale/
+          cp  -rf sphinx_rtd_theme-locale/locales/zh_CN docs/locale/
           rm -rf sphinx_rtd_theme-locale/
           cd docs
           make gettext

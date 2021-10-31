@@ -13,7 +13,7 @@ dist/
 bower_components/
 include/
 lib/
-local/
+locale/
 node_modules
 npm-debug.log
 pip-selfcheck.json
