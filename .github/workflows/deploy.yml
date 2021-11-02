@@ -27,7 +27,7 @@ jobs:
       # 安装依赖包
       - name: Install dependencies
         run: |
-          pip install -r doc/requirements.txt
+          pip install -r docs/requirements.txt
           pip install sphinx-intl
       
       # 克隆
