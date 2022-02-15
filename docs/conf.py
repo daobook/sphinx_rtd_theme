@@ -53,15 +53,15 @@ html_theme_options = {
 }
 html_context = {}
 
-if not 'READTHEDOCS' in os.environ:
-    html_static_path = ['_static/']
-    html_js_files = ['debug.js']
+# if not 'READTHEDOCS' in os.environ:
+#     html_static_path = ['_static/']
+#     html_js_files = ['debug.js']
 
-    # Add fake versions for local QA of the menu
-    html_context['test_versions'] = list(map(
-        lambda x: str(x / 10),
-        range(1, 100)
-    ))
+#     # Add fake versions for local QA of the menu
+#     html_context['test_versions'] = list(map(
+#         lambda x: str(x / 10),
+#         range(1, 100)
+#     ))
 
 html_logo = "demo/static/logo-wordmark-light.svg"
 html_show_sourcelink = True
