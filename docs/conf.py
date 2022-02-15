@@ -20,7 +20,7 @@ version = theme_version
 release = theme_version_full
 author = u'Dave Snider, Read the Docs, Inc. & contributors'
 copyright = author
-language = 'en'
+language = 'zh_CN'
 
 extensions = [
     'sphinx.ext.intersphinx',
