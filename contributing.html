@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="zh-CN" >
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contributing &mdash; Read the Docs Sphinx Theme 1.0.1alpha1 documentation</title>
+  <title>Contributing &mdash; Read the Docs Sphinx Theme 1.0.1alpha1 文档</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -15,10 +15,11 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
         <script src="_static/debug.js"></script>
     <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="Changelog" href="changelog.html" />
     <link rel="prev" title="Development" href="development.html" /> 
 </head>
@@ -36,7 +37,7 @@
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="在文档中搜索" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -91,7 +92,7 @@
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Contributing</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/contributing.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/contributing.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -100,21 +101,21 @@
            <div itemprop="articleBody">
              
   <section id="contributing">
-<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline"></a></h1>
-<p>This project follows the Read the Docs <a class="reference external" href="https://docs.readthedocs.io/en/stable/code-of-conduct.html" title="(in Read the Docs v6.1.1)"><span class="xref std std-doc">code of conduct</span></a>. If you are not familiar with our code of conduct policy,
+<h1>Contributing<a class="headerlink" href="#contributing" title="永久链接至标题"></a></h1>
+<p>This project follows the Read the Docs <span class="xref std std-doc">code of conduct</span>. If you are not familiar with our code of conduct policy,
 take a minute to read the policy before starting with your first contribution.</p>
 <section id="modifying-the-theme">
-<h2>Modifying the theme<a class="headerlink" href="#modifying-the-theme" title="Permalink to this headline"></a></h2>
+<h2>Modifying the theme<a class="headerlink" href="#modifying-the-theme" title="永久链接至标题"></a></h2>
 <p>The styles for this theme use <a class="reference external" href="http://www.sass-lang.com">SASS</a> and a custom CSS framework called <a class="reference external" href="http://www.github.com/snide/wyrm/">Wyrm</a>. We
 use <a class="reference external" href="https://webpack.js.org/">Webpack</a> and <a class="reference external" href="https://github.com/sass/node-sass">node-sass</a> to build the CSS. <a class="reference external" href="https://webpack.js.org/">Webpack</a> is used to watch for
 changes, rebuild the static assets, and rebuild the Sphinx demo documentation.</p>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="admonition-title">备注</p>
 <p>The installation of Node is outside the scope of this documentation. You
 will need Node version 10+ in order to make changes to this theme.</p>
 </div>
 <section id="set-up-your-environment">
-<h3>Set up your environment<a class="headerlink" href="#set-up-your-environment" title="Permalink to this headline"></a></h3>
+<h3>Set up your environment<a class="headerlink" href="#set-up-your-environment" title="永久链接至标题"></a></h3>
 <ol class="arabic">
 <li><p>Install <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> and documentation build dependencies.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install -e <span class="s1">&#39;.[dev]&#39;</span>
@@ -129,7 +130,7 @@ will need Node version 10+ in order to make changes to this theme.</p>
 </ol>
 </section>
 <section id="making-changes">
-<h3>Making changes<a class="headerlink" href="#making-changes" title="Permalink to this headline"></a></h3>
+<h3>Making changes<a class="headerlink" href="#making-changes" title="永久链接至标题"></a></h3>
 <p>Changes to the theme can be compiled and tested with <a class="reference external" href="https://webpack.js.org/">Webpack</a>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>npm run dev
 </pre></div>
@@ -150,7 +151,7 @@ can be used to test built assets:</p>
 </section>
 </section>
 <section id="testing">
-<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline"></a></h2>
+<h2>Testing<a class="headerlink" href="#testing" title="永久链接至标题"></a></h2>
 <p>QA testing theme changes and pull requests is complex, due to backwards
 compatibility.</p>
 <p>The following cases need to be tested with changes to CSS or JavaScript:</p>
@@ -218,11 +219,11 @@ same <code class="docutils literal notranslate"><span class="pre">tox</span></co
 </ul>
 </section>
 <section id="translations">
-<h2>Translations<a class="headerlink" href="#translations" title="Permalink to this headline"></a></h2>
+<h2>Translations<a class="headerlink" href="#translations" title="永久链接至标题"></a></h2>
 <p>Translations are managed using <a class="reference external" href="https://www.transifex.com/readthedocs/sphinx-rtd-theme">Transifex</a>. You can join any of the existing
 language teams or request a new language is added to the project. For more
 information on our translation standards, see our docs on
-<a class="reference external" href="https://docs.readthedocs.io/en/stable/development/i18n.html" title="(in Read the Docs v6.1.1)"><span>Internationalization</span></a></p>
+<span class="xref std std-doc">rtd:development/i18n</span></p>
 <p>Periodically, core team should update the translation files outside our normal
 releases. Someone from the core team, with write access to Transifex, should run
 the following:</p>
@@ -234,7 +235,7 @@ update our local translation files. Changes can be checked in to a branch and
 put up for review.</p>
 </section>
 <section id="releasing-the-theme">
-<h2>Releasing the theme<a class="headerlink" href="#releasing-the-theme" title="Permalink to this headline"></a></h2>
+<h2>Releasing the theme<a class="headerlink" href="#releasing-the-theme" title="永久链接至标题"></a></h2>
 <p>To release a new version of the theme, core team will take the following steps:</p>
 <ol class="arabic">
 <li><p>Bump the version by running <code class="docutils literal notranslate"><span class="pre">bump2version</span> <span class="pre">[major|minor|patch|dev]</span></code>.
@@ -272,19 +273,19 @@ this change.</p></li>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="development.html" class="btn btn-neutral float-left" title="Development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="development.html" class="btn btn-neutral float-left" title="Development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright Dave Snider, Read the Docs, Inc. &amp; contributors.</p>
+    <p>&#169; 版权所有 Dave Snider, Read the Docs, Inc. &amp; contributors.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
    
 
 </footer>
@@ -297,7 +298,7 @@ this change.</p></li>
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="版本列表">
       <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Read the Docs</span>
         v: latest
@@ -305,7 +306,7 @@ this change.</p></li>
       </span>
       <div class="rst-other-versions">
         <dl>
-          <dt>Versions</dt>
+          <dt>版本列表</dt>
             <dd><a href="#">0.1</a></dd>
             <dd><a href="#">0.2</a></dd>
             <dd><a href="#">0.3</a></dd>
@@ -407,18 +408,18 @@ this change.</p></li>
             <dd><a href="#">9.9</a></dd>
         </dl>
         <dl>
-          <dt>Downloads</dt>
+          <dt>下载链接</dt>
           <dd><a href="#">PDF</a></dd>
           <dd><a href="#">ePub</a></dd>
           <dd><a href="#">HTML</a></dd>
         </dl>
         <dl>
-          <dt>On Read the Docs</dt>
+          <dt>托管于 Read the Docs</dt>
             <dd>
-              <a href="#">Project Home</a>
+              <a href="#">项目首页</a>
             </dd>
             <dd>
-              <a href="#">Builds</a>
+              <a href="#">构建</a>
             </dd>
         </dl>
         <dl>

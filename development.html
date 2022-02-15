@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="zh-CN" >
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Development &mdash; Read the Docs Sphinx Theme 1.0.1alpha1 documentation</title>
+  <title>Development &mdash; Read the Docs Sphinx Theme 1.0.1alpha1 文档</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -15,10 +15,11 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
         <script src="_static/debug.js"></script>
     <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="Contributing" href="contributing.html" />
     <link rel="prev" title="Configuration" href="configuring.html" /> 
 </head>
@@ -36,7 +37,7 @@
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="在文档中搜索" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -92,7 +93,7 @@
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Development</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/development.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/development.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -101,13 +102,13 @@
            <div itemprop="articleBody">
              
   <section id="development">
-<h1>Development<a class="headerlink" href="#development" title="Permalink to this headline"></a></h1>
+<h1>Development<a class="headerlink" href="#development" title="永久链接至标题"></a></h1>
 <p>The theme developers follow the guidelines below for development and release
 planning. Documentation authors can decide which theme release works best for
 their project based on required browser/operating system combinations or
 dependency support.</p>
 <section id="supported-browsers">
-<span id="id1"></span><h2>Supported browsers<a class="headerlink" href="#supported-browsers" title="Permalink to this headline"></a></h2>
+<span id="id1"></span><h2>Supported browsers<a class="headerlink" href="#supported-browsers" title="永久链接至标题"></a></h2>
 <p>Official browser support is determined by the most popular browser/operating
 system combinations in our pageview analytics. Officially supported combinations
 are commonly tested during development, and are always tested before final
@@ -117,7 +118,7 @@ considered partially supported. This means that we do not consistently test
 these combinations, however we do expect user experience to be comparable with
 supported combinations.</p>
 <table class="colwidths-given docutils align-default" id="id7">
-<caption><span class="caption-text">Supported browser combinations</span><a class="headerlink" href="#id7" title="Permalink to this table"></a></caption>
+<caption><span class="caption-text">Supported browser combinations</span><a class="headerlink" href="#id7" title="永久链接至表格"></a></caption>
 <colgroup>
 <col style="width: 27%" />
 <col style="width: 55%" />
@@ -149,7 +150,7 @@ supported combinations.</p>
 </tbody>
 </table>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0: </span>Supported browser and operating system combinations added</p>
+<p><span class="versionmodified added">1.0 新版功能: </span>Supported browser and operating system combinations added</p>
 </div>
 <p>There are several browser/operating system combinations that are not supported
 by the theme developers at all. Unsupported combinations do not receive testing
@@ -169,10 +170,10 @@ browser to officially support it in testing and development.</p>
 </dl>
 </section>
 <section id="supported-dependencies">
-<span id="id2"></span><h2>Supported dependencies<a class="headerlink" href="#supported-dependencies" title="Permalink to this headline"></a></h2>
+<span id="id2"></span><h2>Supported dependencies<a class="headerlink" href="#supported-dependencies" title="永久链接至标题"></a></h2>
 <p>The theme officially supports the following dependencies in your Sphinx project:</p>
 <table class="colwidths-given docutils align-default" id="id8">
-<caption><span class="caption-text">Supported dependencies</span><a class="headerlink" href="#id8" title="Permalink to this table"></a></caption>
+<caption><span class="caption-text">Supported dependencies</span><a class="headerlink" href="#id8" title="永久链接至表格"></a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -195,17 +196,17 @@ browser to officially support it in testing and development.</p>
 </tbody>
 </table>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0: </span>Sphinx 4.0 support added</p>
+<p><span class="versionmodified added">1.0 新版功能: </span>Sphinx 4.0 support added</p>
 </div>
 <div class="deprecated">
-<p><span class="versionmodified deprecated">Deprecated since version 1.0: </span>Sphinx 1.6 support removed</p>
+<p><span class="versionmodified deprecated">1.0 版后已移除: </span>Sphinx 1.6 support removed</p>
 </div>
 <div class="versionadded">
-<p><span class="versionmodified added">New in version 1.0: </span>docutils 0.17 support added</p>
+<p><span class="versionmodified added">1.0 新版功能: </span>docutils 0.17 support added</p>
 </div>
 </section>
 <section id="roadmap">
-<h2>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline"></a></h2>
+<h2>Roadmap<a class="headerlink" href="#roadmap" title="永久链接至标题"></a></h2>
 <p>We currently have several releases planned on our development roadmap. Backward
 incompatible changes, deprecations, and major features are noted for each of
 these releases.</p>
@@ -216,7 +217,7 @@ version:</p>
 </pre></div>
 </div>
 <section id="release-1-0-0">
-<span id="id3"></span><h3>1.0.0<a class="headerlink" href="#release-1-0-0" title="Permalink to this headline"></a></h3>
+<span id="id3"></span><h3>1.0.0<a class="headerlink" href="#release-1-0-0" title="永久链接至标题"></a></h3>
 <dl class="field-list simple">
 <dt class="field-odd">Planned release date</dt>
 <dd class="field-odd"><p>August 2021</p>
@@ -244,7 +245,7 @@ release.</p>
 </dl>
 </section>
 <section id="release-1-1-0">
-<span id="id4"></span><h3>1.1.0<a class="headerlink" href="#release-1-1-0" title="Permalink to this headline"></a></h3>
+<span id="id4"></span><h3>1.1.0<a class="headerlink" href="#release-1-1-0" title="永久链接至标题"></a></h3>
 <dl class="field-list simple">
 <dt class="field-odd">Planned release date</dt>
 <dd class="field-odd"><p>2021 Q3</p>
@@ -256,7 +257,7 @@ and will instead mark the last release targeting projects with old dependencies
 like Sphinx 1.8, HTML4, or required support for IE11.</p>
 </section>
 <section id="release-2-0-0">
-<span id="id5"></span><h3>2.0.0<a class="headerlink" href="#release-2-0-0" title="Permalink to this headline"></a></h3>
+<span id="id5"></span><h3>2.0.0<a class="headerlink" href="#release-2-0-0" title="永久链接至标题"></a></h3>
 <dl class="field-list simple">
 <dt class="field-odd">Planned release date</dt>
 <dd class="field-odd"><p>2022 Q1</p>
@@ -282,7 +283,7 @@ theme and Sphinx.</p>
 </dl>
 </section>
 <section id="release-3-0-0">
-<span id="id6"></span><h3>3.0.0<a class="headerlink" href="#release-3-0-0" title="Permalink to this headline"></a></h3>
+<span id="id6"></span><h3>3.0.0<a class="headerlink" href="#release-3-0-0" title="永久链接至标题"></a></h3>
 <p>This release is not yet planned, however there are plans to potentially replace
 Wyrm with Bootstrap in a release after 2.0.</p>
 <p>Also tentatively planned for this release is finally removing built CSS and
@@ -297,19 +298,19 @@ development releases from PyPI</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="configuring.html" class="btn btn-neutral float-left" title="Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="configuring.html" class="btn btn-neutral float-left" title="Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright Dave Snider, Read the Docs, Inc. &amp; contributors.</p>
+    <p>&#169; 版权所有 Dave Snider, Read the Docs, Inc. &amp; contributors.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
    
 
 </footer>
@@ -322,7 +323,7 @@ development releases from PyPI</p>
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="Versions">
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="版本列表">
       <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Read the Docs</span>
         v: latest
@@ -330,7 +331,7 @@ development releases from PyPI</p>
       </span>
       <div class="rst-other-versions">
         <dl>
-          <dt>Versions</dt>
+          <dt>版本列表</dt>
             <dd><a href="#">0.1</a></dd>
             <dd><a href="#">0.2</a></dd>
             <dd><a href="#">0.3</a></dd>
@@ -432,18 +433,18 @@ development releases from PyPI</p>
             <dd><a href="#">9.9</a></dd>
         </dl>
         <dl>
-          <dt>Downloads</dt>
+          <dt>下载链接</dt>
           <dd><a href="#">PDF</a></dd>
           <dd><a href="#">ePub</a></dd>
           <dd><a href="#">HTML</a></dd>
         </dl>
         <dl>
-          <dt>On Read the Docs</dt>
+          <dt>托管于 Read the Docs</dt>
             <dd>
-              <a href="#">Project Home</a>
+              <a href="#">项目首页</a>
             </dd>
             <dd>
-              <a href="#">Builds</a>
+              <a href="#">构建</a>
             </dd>
         </dl>
         <dl>
